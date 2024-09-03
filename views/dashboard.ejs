@@ -1,0 +1,202 @@
+<%- include('./header.ejs') %>
+ 
+<!--slider div start-->
+<div class="carousel slide" data-bs-ride="carousel" id="a">
+  <% if(message.length>0){%>
+            <div class="alert alert-danger">
+              <%= message%>
+            </div>
+
+           <%}%>
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#a"
+      data-bs-slide-to="0"
+      class="active"
+    ></button>
+    <button type="button" data-bs-target="#a" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#a" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#a" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#a" data-bs-slide-to="4"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="4000">
+      <img
+        src="https://www.bankrate.com/2014/05/26174958/Reasons-to-go-to-college.jpg?auto=webp&optimize=high&crop=16:9"
+        class="w-100"
+        alt="..."
+      />
+      <div class="carousel-caption">
+        <h1>Apna college , Gwalior</h1>
+      </div>
+      <!--carousel-caption-->
+    </div>
+    0
+    <div class="carousel-item" data-bs-interval="4000">
+      <img
+        src="https://hinducollege.ac.in/images/slides/jun-2022/11.jpg"
+        class="w-100"
+        alt="..."
+      />
+      <div class="carousel-caption">
+        <h1>Apna college , Gwalior</h1>
+      </div>
+      <!--carousel-caption-->
+    </div>
+    1
+    <div class="carousel-item" data-bs-interval="4000">
+      <img
+        src="https://www.universityofcalifornia.edu/sites/default/files/styles/article_default_banner/public/students-sitting-in-classroom.jpeg?h=55f091bd&itok=juHWwCJw"
+        class="w-100"
+        alt="..."
+      />
+      <div class="carousel-caption">
+        <h1>Apna college , Gwalior</h1>
+      </div>
+      <!--carousel-caption-->
+    </div>
+    2
+    <div class="carousel-item" data-bs-interval="4000">
+      <img
+        src="https://media.newyorker.com/photos/5c926fae4c50545726e44f85/16:9/w_2560,h_1439,c_limit/Lemann-College-Admissions.jpg"
+        class="w-100"
+        alt="..."
+      />
+      <div class="carousel-caption">
+        <h1>Apna college , Gwalior</h1>
+      </div>
+      <!--carousel-caption-->
+    </div>
+    3
+    <div class="carousel-item" data-bs-interval="4000">
+      <img
+        src="https://as1.ftcdn.net/v2/jpg/04/36/66/34/1000_F_436663414_ns31tPee1VbI7HqtPyf3azhtHGKO7t5l.jpg"
+        class="w-100"
+        alt="..."
+      />
+      <div class="carousel-caption">
+        <h1>Apna college , Gwalior</h1>
+      </div>
+      <!--carousel-caption-->
+    </div>
+    4
+  </div>
+  <!--carousel-inner-->
+
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#a"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#a"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<!--slider div end-->
+
+<!-- course start -->
+<div class="container mb-5 text-center">
+  <h1 class="course-heading mt-5">Hello</h1>
+  <h2 class="course-heading my-3">register your course</h2>
+  <p class="course-para mb-5 text-center">
+    Course Registration means the official recording of a student's name to
+    study a course or courses.
+  </p>
+  <div class="row">
+    <div class="col-md-4 mb-5">
+      <div class="card">
+        <img src="image/course1.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">B.Tech</h5>
+          <p class="card-text">
+            B.Tech is a professional undergraduate engineering degree
+          </p>
+          <a href="#" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Btech">Register</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card">
+        <img src="image/course4.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">B.Tech</h5>
+          <p class="card-text">
+            B.Tech is a professional undergraduate engineering degree
+          </p>
+          <a href="#" class="btn btn-info">Register</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card">
+        <img src="image/course3.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">B.Tech</h5>
+          <p class="card-text">
+            B.Tech is a professional undergraduate engineering degree
+          </p>
+          <a href="#" class="btn btn-info">Register</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- course end -->
+
+<!--Btech Modal -->
+<div class="modal fade" id="Btech" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Btech</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="/createCourse" method="post">
+          <div class="mb-3">
+            <label>Name</label>
+            <input type="text" name="name" value="<%= n %>" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label>Email</label>
+            <input type="email" name="email" value="<%= e %>" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label>Phone</label>
+            <input type="number" name="phone" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label>10th Marks</label>
+            <input type="number" name="tenth" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label>12th Marks</label>
+            <input type="number" name="twelth" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label>Course</label>
+            <input type="text" name="course" value="Btech" readonly required class="form-control">
+          </div>
+          <button type="submit">submit</button>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('./footer.ejs') %>

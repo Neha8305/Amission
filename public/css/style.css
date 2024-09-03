@@ -1,0 +1,250 @@
+/* .container-fluid{
+    background-color: #6ca7b6;
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+.infinity-image-container {
+  background: url("../image/login.jpg") no-repeat;
+  background-size: cover;
+  background-position: 80%;
+  opacity: 0.6;
+  width: 50% !important;
+}
+#register {
+  background-image: url('../image/registration.jpg');
+  background-size: cover;
+  background-position: left;
+}
+
+.infinity-form-container {
+  background: linear-gradient(white, rgba(0, 187, 255, 0.628));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.infinity-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.infinity-form h4 {
+  font-weight: bold;
+  color: white;
+}
+
+.infinity-form .form-input {
+  position: relative;
+}
+
+.infinity-form .form-input input {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: white;
+  padding-left: 45px;
+}
+
+.infinity-form .form-input span {
+  position: absolute;
+  top: 8px;
+  padding-left: 20px;
+  color: #777;
+}
+
+.infinity-form .form-input input:focus,
+.infinity-form .form-input input:valid {
+  border: 2px solid #4285f4;
+}
+
+.infinity-form input[type="checkbox"]:not(:checked) + label:before {
+  background: transparent;
+  border: 2px solid white;
+  width: 15px;
+  height: 15px;
+}
+
+.infinity-form
+  .custom-checkbox
+  .custom-control-input:checked
+  ~ .custom-control-label::before {
+  background-color: #4285f4 !important;
+  border: 0px;
+}
+
+.infinity-form button[type="submit"] {
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #4285f4, #709de8); /*Button Color*/
+  color: #fff;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.infinity-form button[type="submit"]:hover {
+  background: linear-gradient(
+    45deg,
+    #709de8,
+    #4285f4
+  ); /*Button color when hover*/
+}
+
+.forget-link,
+.login-link,
+.register-link {
+  color: #fff;
+  font-weight: bold;
+}
+
+.forget-link:hover,
+.login-link:hover,
+.register-link:hover {
+  color: #4285f4;
+  text-decoration: none;
+}
+
+.infinity-form .btn-social {
+  color: white;
+  border: 0;
+  display: inline-block;
+  margin: 0px;
+  margin-right: 10px;
+  font-weight: bold;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.infinity-form .btn-facebook {
+  background: #4866a8;
+  margin: 12px;
+  padding: 10px;
+  display: inline;
+}
+.infinity-form .btn-google {
+  background: #da3f34;
+  margin: 12px;
+  padding: 10px;
+  display: inline;
+}
+.infinity-form .btn-twitter {
+  background: #33ccff;
+  margin: 12px;
+  padding: 10px;
+  display: inline;
+}
+/* .infinity-form .btn-social:hover {
+    text-decoration: underline;
+} */
+
+/* .infinity-form .btn-facebook:hover {
+    color: hsla(221, 40%, 40%, 1);
+} */
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.infinity-form .btn-social {
+  color: #fff;
+  border: 0;
+  margin-bottom: 10px;
+}
+.infinity-form .btn-google:hover {
+  color: hsla(4, 59%, 47%, 1);
+}
+
+.infinity-form .btn-twitter:hover {
+  color: hsla(195, 78%, 54%, 1);
+}
+
+.navbar {
+  /*background: #0000008a!important;*/
+  background: #fff;
+}
+.navbar-nav li {
+  padding: 0 10px;
+}
+.navbar-nav li a {
+  color: black;
+  font-weight: 600;
+  font-weight: 20px;
+}
+.mob-logo {
+  display: none;
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .mob-logo {
+    display: block;
+  }
+  .desk-logo {
+    display: none;
+  }
+  .navbar {
+    background: #0000004d;
+  }
+}
+
+.carousel-caption {
+  color: #fff;
+  position: absolute;
+  top: 27%;
+  left: 153px;
+}
+h5 {
+  font-size: 70px;
+  border-bottom-style: ridge;
+  font-weight: bold;
+  border-bottom-color: #82c434;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1300px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+.footer{
+    font-family: 'poppins',sans-serif;
+    background: #0f0c29;
+    background: linear-gradient(to right,#24243e,#302b63,#0f0c29);
+    
+}
+.course-heading {
+    text-transform: uppercase;
+    font-size: 40px;
+    position: relative;
+    font-family: 'prague',sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+.course-para{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.card{
+    transition: all ease 0.5s;
+}
+.card:hover{
+    box-shadow: 0px 0px 10px black;
+}
+
+

@@ -1,0 +1,38 @@
+<%- include('../header.ejs') %>
+ <h1 class="mt-5">Edit data</h1>
+ <div class="container mt-5">
+   <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <form action="/courseupdate/<%=edit._id %>" method="post">
+            <div class="mb-3">
+              <label>Name</label>
+              <input type="text" name="name" class="form-control" required value="<%=edit.name %>">
+            </div>
+            <div class="mb-3">
+              <label>Email</label>
+              <input type="email" name="email" class="form-control" required value="<%=edit.email %>">
+            </div>
+            <div class="mb-3">
+              <label>Phone</label>
+              <input type="number" name="phone" class="form-control" required value="<%=edit.phone %>">
+            </div>
+            <div class="mb-3">
+              <label>10th Number</label>
+              <input type="number" name="tenth" class="form-control" required value="<%=edit.tenth %>">
+            </div>
+            <div class="mb-3">
+              <label>12th number</label>
+              <input type="number" name="twelth" class="form-control" required value="<%=edit.twelth %>">
+            </div>
+            <div class="mb-3">
+              <label>Course</label>
+              <input type="text" name="course" value="BTECH" class="form-control" readonly required>
+            </div>
+            <button type="submit" class="btn btn-info">Update</button>
+          </form>
+    </div>
+    <div class="col-md-4"></div>
+   </div>
+  </div>
+<%- include('../footer.ejs') %>
