@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const url = "mongodb+srv://neha90:Ardhnari9090@admission.6dkcx.mongodb.net/?retryWrites=true&w=majority&appName=Admission";
+const url = "mongodb+srv://neha90:Ardhnari9090@admission.6dkcx.mongodb.net/Admission?retryWrites=true&w=majority&appName=Admission";
 
 const connectdb=()=>{
     return mongoose.connect(url)
